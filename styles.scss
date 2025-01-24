@@ -1,0 +1,129 @@
+@use "fonts.css";
+
+$yellow: hsl(47, 88%, 63%);
+$white: hsl(0, 0%, 100%);
+$gray-500: hsl(0, 0%, 42%);
+$gray-950: hsl(0, 0%, 7%);
+
+$spacing-24: 24px;
+$spacing-12: 12px;
+$spacing-8: 8px;
+$spacing-4: 4px;
+
+@mixin text-preset-1 {
+  font: clamp(20px, 4vw, 24px)/150% "Figtree Extra Bold", sans-serif;
+  letter-spacing: 0;
+  color: $gray-950;
+  text-decoration: none;
+}
+
+@mixin text-preset-2 {
+  font: clamp(12px, 2.5vw, 16px)/150% "Figtree Medium", sans-serif;
+  letter-spacing: 0;
+  color: $gray-500;
+}
+
+@mixin text-preset-3 {
+  font: clamp(12px, 2.5vw, 14px)/150% "Figtree Medium", sans-serif;
+  letter-spacing: 0;
+  color: $gray-950;
+}
+
+@mixin text-preset-4 {
+  font: clamp(12px, 2.5vw, 14px)/150% "Figtree Extra Bold", sans-serif;
+  letter-spacing: 0;
+  color: $gray-950;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: $yellow;
+  padding: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: $white;
+  border-radius: 20px;
+  border: 1.5px solid $gray-950;
+  margin: 4vh 20vw;
+  padding: $spacing-24;
+  box-shadow: 8px 8px 0 $gray-950;
+  max-width: 380px;
+  max-height: 520px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 4vh 1vw;
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: $spacing-12;
+}
+
+header img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  @include text-preset-4;
+  background-color: $yellow;
+  border-radius: 4px;
+  padding: $spacing-4 $spacing-12;
+  margin: $spacing-24 0 $spacing-12 0;
+}
+
+p {
+  margin: 0;
+
+  &.header-p {
+    @include text-preset-3;
+  }
+
+  &.main-p {
+    @include text-preset-2;
+  }
+
+  &.avatar-p {
+    @include text-preset-4;
+    margin-left: $spacing-8;
+  }
+}
+
+h1 {
+margin: $spacing-12 0 0 0;
+
+  a {
+    @include text-preset-1;
+  }
+
+  a:hover {
+    color: $yellow;
+  }
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: $spacing-24;
+}
+
+.avatar {
+  max-width: 32px;
+  max-height: 32px;
+}

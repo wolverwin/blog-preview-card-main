@@ -1,0 +1,119 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Figtree Italic";
+  src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Figtree Extra Bold";
+  src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+}
+@font-face {
+  font-family: "Figtree Medium";
+  src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  background-color: hsl(47, 88%, 63%);
+  padding: 4px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  box-sizing: border-box;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 1.5px solid hsl(0, 0%, 7%);
+  margin: 4vh 20vw;
+  padding: 24px;
+  box-shadow: 8px 8px 0 hsl(0, 0%, 7%);
+  max-width: 380px;
+  max-height: 520px;
+}
+
+@media (max-width: 650px) {
+  .container {
+    margin: 4vh 1vw;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 12px;
+}
+
+header img {
+  border-radius: 10px;
+  max-width: 100%;
+  height: auto;
+}
+
+nav {
+  font: clamp(12px, 2.5vw, 14px)/150% "Figtree Extra Bold", sans-serif;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 7%);
+  background-color: hsl(47, 88%, 63%);
+  border-radius: 4px;
+  padding: 4px 12px;
+  margin: 24px 0 12px 0;
+}
+
+p {
+  margin: 0;
+}
+p.header-p {
+  font: clamp(12px, 2.5vw, 14px)/150% "Figtree Medium", sans-serif;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 7%);
+}
+p.main-p {
+  font: clamp(12px, 2.5vw, 16px)/150% "Figtree Medium", sans-serif;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 42%);
+}
+p.avatar-p {
+  font: clamp(12px, 2.5vw, 14px)/150% "Figtree Extra Bold", sans-serif;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 7%);
+  margin-left: 8px;
+}
+
+h1 {
+  margin: 12px 0 0 0;
+}
+h1 a {
+  font: clamp(20px, 4vw, 24px)/150% "Figtree Extra Bold", sans-serif;
+  letter-spacing: 0;
+  color: hsl(0, 0%, 7%);
+  text-decoration: none;
+}
+h1 a:hover {
+  color: hsl(47, 88%, 63%);
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.avatar {
+  max-width: 32px;
+  max-height: 32px;
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,23 @@
+@font-face {
+    font-family: "Figtree";
+    src: url("./assets/fonts/Figtree-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Figtree Italic";
+    src: url("./assets/fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Figtree Extra Bold";
+    src: url("./assets/fonts/static/Figtree-ExtraBold.ttf") format("truetype");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Figtree Medium";
+    src: url("./assets/fonts/static/Figtree-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
